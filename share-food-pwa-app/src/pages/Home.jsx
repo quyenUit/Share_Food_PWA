@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "reactstrap";
 import { Link } from "react-router-dom";
 import Helmet from "../components/Helmet/Helmet";
-import heroImg from "../assets/images/hero.png";
+import heroImg from "../assets/images/hero1.jpg";
 import "../styles/hero-section.css";
 import Category from "../components/UI/category/Category";
 import "../styles/home.css";
@@ -82,16 +82,13 @@ const Home = () => {
           <Row>
             <Col lg="6" md="6">
               <div className="hero__content">
-                <h5 className="mb-3">Easy way to make an order</h5>
+                <h5 className="mb-3">Một miếng khi đói bằng một gói khi no</h5>
                 <h1 className="mb-4 hero__title">
-                  <span>HUNGRY?</span> Just wait <br /> food at
-                  <span> your door</span>
+                  <span>ĐỪNG!</span> Lãng phí <br /> thức ăn
+                  <span> của bạn</span>
                 </h1>
 
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
-                  magni delectus tenetur autem, sint veritatis!
-                </p>
+                <p>Lá lành đùm lá rách.</p>
 
                 <div className="hero__btns d-flex align-items-center gap-5 mt-4">
                   <button className="order__btn d-flex align-items-center justify-content-between">
@@ -136,7 +133,7 @@ const Home = () => {
       <section>
         <Container>
           <Row>
-            <Col lg="12" className="text-center">
+            {/* <Col lg="12" className="text-center">
               <h5>What we serve</h5>
               <h2 className="feature__title">Just sit back at home</h2>
               <h2 className="feature__title">
@@ -150,9 +147,9 @@ const Home = () => {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Aperiam, eius.{" "}
               </p>
-            </Col>
+            </Col> */}
 
-            {featureData.map((item, index) => (
+            {/* {featureData.map((item, index) => (
               <Col lg="4" md="6" sm="6" key={index} className="mt-5">
                 <div className="feature__item text-center px-5 py-3">
                   <img
@@ -164,7 +161,7 @@ const Home = () => {
                   <p>{item.desc}</p>
                 </div>
               </Col>
-            ))}
+            ))} */}
           </Row>
         </Container>
       </section>
@@ -173,7 +170,7 @@ const Home = () => {
         <Container>
           <Row>
             <Col lg="12" className="text-center">
-              <h2>Popular Foods</h2>
+              <h2>Thực phẩm phổ biến</h2>
             </Col>
 
             <Col lg="12">
@@ -192,7 +189,7 @@ const Home = () => {
                   onClick={() => setCategory("BURGER")}
                 >
                   <img src={foodCategoryImg01} alt="" />
-                  Burger
+                  Bánh Mì
                 </button>
 
                 <button
@@ -202,7 +199,7 @@ const Home = () => {
                   onClick={() => setCategory("PIZZA")}
                 >
                   <img src={foodCategoryImg02} alt="" />
-                  Pizza
+                  Cơm
                 </button>
 
                 <button
@@ -212,7 +209,7 @@ const Home = () => {
                   onClick={() => setCategory("BREAD")}
                 >
                   <img src={foodCategoryImg03} alt="" />
-                  Bread
+                  Bún
                 </button>
               </div>
             </Col>
