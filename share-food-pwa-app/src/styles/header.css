@@ -1,7 +1,8 @@
 .header {
   width: 100%;
-  height: 100px;
+  height: 80px;
   line-height: 100px;
+  background-color: #ffffff;
 }
 
 .logo {
@@ -11,6 +12,8 @@
   width: calc(100% - 60%);
   object-fit: contain;
   margin-top: -40px;
+  width: 200px;
+  height: 180px;
 }
 
 .logo h5 {
@@ -22,30 +25,29 @@
 }
 
 .menu a {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1rem;
   color: #212245;
   transition: 0.3s;
+  text-decoration: none;
+}
+.menu i {
+  font-size: 32px;
 }
 
 .menu a:hover {
-  color: #df2020;
+  color: #ff971d;
 }
 
 .active__menu {
-  color: #df2020 !important;
+  color: #ff971d !important;
 }
 
 .cart__icon i,
-.user i,
 .mobile__menu i {
   font-size: 1.3rem;
   color: #212245;
   cursor: pointer;
-}
-
-.cart__icon {
-  position: relative;
 }
 
 .cart__badge {
@@ -104,7 +106,7 @@
     right: 0;
     width: 250px;
     height: 100%;
-    background: #fff;
+    background: #38a2ff;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -113,7 +115,7 @@
   }
 
   .menu a {
-    font-size: 0.9rem;
+    font-size: 0.5rem;
   }
 
   .mobile__menu {
@@ -121,7 +123,6 @@
   }
 
   .cart__icon i,
-  .user i,
   .mobile__menu i {
     font-size: 1rem;
   }

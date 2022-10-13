@@ -15,25 +15,25 @@ import foodCategoryImg02 from "../assets/images/pizza.png";
 import foodCategoryImg03 from "../assets/images/bread.png";
 import ProductCard from "../components/UI/product-card/ProductCard.jsx";
 
-const featureData = [
-  {
-    title: "Quick Delivery",
-    imgUrl: featureImg01,
-    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, doloremque.",
-  },
+// const featureData = [
+//   {
+//     title: "Quick Delivery",
+//     imgUrl: featureImg01,
+//     desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, doloremque.",
+//   },
 
-  {
-    title: "Super Dine In",
-    imgUrl: featureImg02,
-    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, doloremque.",
-  },
+//   {
+//     title: "Super Dine In",
+//     imgUrl: featureImg02,
+//     desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, doloremque.",
+//   },
 
-  {
-    title: "Quick Delivery",
-    imgUrl: featureImg03,
-    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, doloremque.",
-  },
-];
+//   {
+//     title: "Quick Delivery",
+//     imgUrl: featureImg03,
+//     desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, doloremque.",
+//   },
+// ];
 const Home = () => {
   const [category, setCategory] = useState("ALL");
   const [allProducts, setAllProducts] = useState(products);
@@ -80,7 +80,7 @@ const Home = () => {
       <section>
         <Container>
           <Row>
-            <Col lg="6" md="6">
+            {/* <Col lg="6" md="6">
               <div className="hero__content">
                 <h5 className="mb-3">Một miếng khi đói bằng một gói khi no</h5>
                 <h1 className="mb-4 hero__title">
@@ -115,13 +115,82 @@ const Home = () => {
                   </p>
                 </div>
               </div>
-            </Col>
+            </Col> */}
 
-            <Col lg="6" md="6">
+            {/* <Col lg="6" md="6">
               <div className="hero__img">
                 <img src={heroImg} alt="hero-img" className="w-100" />
               </div>
-            </Col>
+            </Col> */}
+
+            <div
+              id="carouselExampleIndicators"
+              className="carousel slide"
+              data-ride="carousel"
+            >
+              <ol className="carousel-indicators">
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="0"
+                  className="active"
+                ></li>
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="1"
+                ></li>
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="2"
+                ></li>
+              </ol>
+              <div className="carousel-inner">
+                <div className="carousel-item active">
+                  <img
+                    src={heroImg}
+                    alt="First silde"
+                    className="d-block w-100"
+                  />
+                </div>
+                <div className="carousel-item">
+                  <img
+                    src={heroImg}
+                    alt="Second silde"
+                    className="d-block w-100"
+                  />
+                </div>
+                <div className="carousel-item">
+                  <img
+                    src={heroImg}
+                    alt="Third silde"
+                    className="d-block w-100"
+                  />
+                </div>
+              </div>
+              <a
+                className="carousel-control-prev"
+                href="#carouselExampleIndicators"
+                role="button"
+                data-slide="prev"
+              >
+                <span
+                  className="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span className="sr-only">Previous</span>
+              </a>
+              <a
+                className="carousel-control-next"
+                href="#carouselExampleIndicators"
+                role="button"
+                data-slide="next"
+              >
+                <span
+                  className="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span className="sr-only">Next</span>
+              </a>
+            </div>
           </Row>
         </Container>
       </section>

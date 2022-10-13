@@ -1,26 +1,37 @@
 import React, { useRef } from "react";
 
-import { Container } from "reactstrap";
+import { Container, NavItem } from "reactstrap";
 import logo from "../../assets/images/res-logo.png";
 import { NavLink, Link } from "react-router-dom";
 import "../../styles/header.css";
+import { Home, Bookmark, User } from "react-feather";
+import styled, { createGlobalStyle } from "styled-components";
 
 const nav__links = [
   {
-    display: "Home",
+    icon: <i class="ri-home-5-line"></i>,
+    display: "Trang chủ",
     path: "/home",
   },
   {
-    display: "Foods",
+    icon: <i class="ri-file-list-3-line"></i>,
+    display: "Tin Foods",
     path: "/foods",
   },
   {
-    display: "Cart",
+    icon: <i class="ri-restaurant-line"></i>,
+    display: "Đặt món",
     path: "/cart",
   },
   {
-    display: "Contact",
+    icon: <i class="ri-chat-3-line"></i>,
+    display: "Tin nhắn",
     path: "/contact",
+  },
+  {
+    icon: <i class="ri-user-3-line"></i>,
+    display: "Tài khoản",
+    path: "/account",
   },
 ];
 
@@ -36,7 +47,7 @@ const Header = () => {
         <div className="nav__wrapper d-flex align-items-center justify-content-between">
           <div className="logo">
             <img src={logo} alt="logo" />
-            <h5>Share Foods</h5>
+            {/* <h5>Share Foods</h5> */}
           </div>
 
           {/* ======= menu ======= */}
@@ -50,30 +61,21 @@ const Header = () => {
                     navClass.isActive ? "active__menu" : " "
                   }
                 >
+                  {item.icon}
+
                   {item.display}
                 </NavLink>
               ))}
             </div>
           </div>
 
-          <div>
-            <span>
-              <i class="ri-home-line"></i>
-            </span>
-          </div>
-
           {/* ======== nav right icons ========= */}
           <div className="nav__right d-flex align-items-center gap-4">
-            <span className="cart__icon">
+            {/* <span className="cart__icon">
               <i class="ri-shopping-basket-line"></i>
               <span className="cart__badge">2</span>
             </span>
-
-            <span className="user">
-              <Link to="/login">
-                <i class="ri-user-line"></i>
-              </Link>
-            </span>
+           */}
 
             <span className="mobole__menu" onClick={toggleMenu}>
               <i class="ri-menu-line"></i>

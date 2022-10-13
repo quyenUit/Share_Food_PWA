@@ -1,23 +1,26 @@
 .footer {
   padding-top: 50px;
   padding-bottom: 30px;
-  background: #fde4e4;
+  background: #ffe8d6;
 }
 
 .footer__logo img {
   width: calc(100% - 80%);
   margin-bottom: 5px;
+  width: 120px;
+  height: 80px;
 }
 
 .footer__logo h5 {
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin-bottom: 15px;
+  color: #ff971d;
 }
 
 .footer__logo p {
   font-size: 0.9rem;
-  color: #333;
+  color: #ff971d;
   line-height: 28px;
 }
 
@@ -28,20 +31,20 @@
 .delivery__time-item span {
   font-weight: 600;
   font-size: 1rem;
-  color: #212245;
+  color: #ff971d;
 }
 
 .delivery__time-item p {
-  color: #212245;
+  color: #ff971d;
 }
 
 .footer__title {
   font-size: 1.1rem;
-  color: #212245;
+  color: #ff971d;
   font-weight: 600;
 }
 
-.newsletter {
+/* .newsletter {
   padding: 5px;
   border: 1px solid #212245;
   border-radius: 5px;
@@ -49,9 +52,9 @@
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-}
+} */
 
-.newsletter input {
+/* .newsletter input {
   background: transparent;
   border: none;
   outline: none;
@@ -59,43 +62,58 @@
 
 .newsletter input:focus {
   outline: none;
-}
+} */
 
-.newsletter span {
+/* .newsletter span {
   background: #df2020;
   padding: 5px 30px;
   border-radius: 5px;
-}
+} */
 
-.newsletter span i {
+/* .newsletter span i {
   color: #fff;
-}
+} */
 
-.newsletter input::placeholder {
+/* .newsletter input::placeholder {
   color: #212245;
-}
+} */
 
 .social__links span i {
-  padding: 5px;
-  background: #df2020;
+  padding: 10px;
   color: #fff;
   border-radius: 50%;
+  font-size: 24px;
 }
 
+.social__links a {
+  text-decoration: none;
+}
+
+.facebook {
+  background: rgb(39, 97, 232);
+}
+
+.youtube {
+  background: rgb(226, 48, 48);
+}
+
+.m-0 {
+  color: #ff971d;
+}
 .copyright__text {
-  font-size: 0.8rem;
-  color: #df2020;
+  font-size: 1rem;
+  color: #ff971d;
 }
 
 @media only screen and (max-width: 992px) {
-  .newsletter input {
+  /* .newsletter input {
     padding: 7px;
     font-size: 0.7rem;
   }
   .newsletter span {
     padding: 4px 20px;
     font-size: 0.7rem;
-  }
+  } */
 }
 
 @media only screen and (max-width: 768px) {

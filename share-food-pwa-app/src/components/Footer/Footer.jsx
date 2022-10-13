@@ -14,23 +14,25 @@ const Footer = () => {
               <img src={logo} alt="logo" />
               <h5>Share Foods</h5>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Nesciunt pariatur accusamus
+                Đây là dự án phi lợi nhuận, được thực hiện bởi một nhóm sinh
+                viên của Trường đại học Công nghệ Thông tin.
               </p>
             </div>
           </Col>
 
           <Col lg="3" md="4" sm="6">
-            <h5 className="footer__title">Delivery Time</h5>
+            <h5 className="footer__title">Global</h5>
             <ListGroup className="deliver__time-list">
               <ListGroupItem className=" delivery__time-item border-0 ps-0">
-                <span>Sunday - Thursday</span>
-                <p>10:00am - 11:00pm</p>
+                <p>
+                  Decide where you want to help and the UN World Food Programme
+                  will deliver the meals.
+                </p>
               </ListGroupItem>
 
               <ListGroupItem className=" delivery__time-item border-0 ps-0">
-                <span>Friday - Saturday</span>
-                <p>Off day</p>
+                <span>Nhà tài trợ</span>
+                <p></p>
               </ListGroupItem>
             </ListGroup>
           </Col>
@@ -39,19 +41,21 @@ const Footer = () => {
             <h5 className="footer__title">Contact</h5>
             <ListGroup className="deliver__time-list">
               <ListGroupItem className=" delivery__time-item border-0 ps-0">
-                <p>Location: ZindaBazar, Sylhet-3100, Bangladesh</p>
+                <p>
+                  Đại chỉ: Khu phố 6, P.Linh Trung, Tp.Thủ Đức, Tp.Hồ Chí Minh.
+                </p>
               </ListGroupItem>
               <ListGroupItem className=" delivery__time-item border-0 ps-0">
-                <span>Phone: 01712345678</span>
+                <span>Điện thoại: 01712345678</span>
               </ListGroupItem>
 
               <ListGroupItem className=" delivery__time-item border-0 ps-0">
-                <span>Email: example@gmail.com</span>
+                <span>Email: sharefood@gmail.com</span>
               </ListGroupItem>
             </ListGroup>
           </Col>
 
-          <Col lg="3" md="4" sm="6">
+          {/* <Col lg="3" md="4" sm="6">
             <h5 className="footer__title">Newsletter</h5>
             <p>Subscribe our newsletter</p>
             <div className="newsletter">
@@ -60,7 +64,7 @@ const Footer = () => {
                 <i class="ri-send-plane-line"></i>
               </span>
             </div>
-          </Col>
+          </Col> */}
         </Row>
 
         <Row className="mt-5">
@@ -76,27 +80,14 @@ const Footer = () => {
               <span>
                 {" "}
                 <Link to="https://www.facebook.com/muhib160">
-                  <i class="ri-facebook-line"></i>
+                  <i class="ri-facebook-line facebook"></i>
                 </Link>{" "}
-              </span>
-
-              <span>
-                <Link to="https://github.com/muhib160">
-                  <i class="ri-github-line"></i>
-                </Link>
               </span>
 
               <span>
                 {" "}
                 <Link to=" https://www.youtube.com/c/MuhibsTechDiary">
-                  <i class="ri-youtube-line"></i>
-                </Link>{" "}
-              </span>
-
-              <span>
-                {" "}
-                <Link to=" https://www.linkedin.com/in/muhib160/">
-                  <i class="ri-linkedin-line"></i>
+                  <i class="ri-youtube-line youtube"></i>
                 </Link>{" "}
               </span>
             </div>
