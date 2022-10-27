@@ -1,4 +1,4 @@
 import axios from "axios";
 export default axios.create({
-  baseURL: "http://localhost:4000",
+  baseURL: "https://nodejs-rest-api-express-mysql.herokuapp.com",
 });
