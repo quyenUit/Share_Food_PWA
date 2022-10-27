@@ -29,6 +29,10 @@
   margin: 10px 0;
 }
 
+.custom-input-password {
+  position: relative;
+}
+
 .btn-register {
   width: 100%;
   height: 35px;

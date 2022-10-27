@@ -41,6 +41,17 @@
   text-align: center;
 }
 
+.custom-input-password {
+  position: relative;
+}
+
+.custom-input-password i {
+  position: absolute;
+  right: 5px;
+  top: 10px;
+  cursor: pointer;
+}
+
 .btn-login {
   width: 100%;
   height: 35px;

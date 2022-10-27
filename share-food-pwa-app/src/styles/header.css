@@ -12,8 +12,6 @@
   width: calc(100% - 60%);
   object-fit: contain;
   margin-top: -40px;
-  width: 200px;
-  height: 180px;
 }
 
 .logo h5 {
